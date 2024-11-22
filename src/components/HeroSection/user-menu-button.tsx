@@ -22,7 +22,7 @@ import { UserCircleIcon } from "../ui/user-circle";
 
 export function UserMenuButton() {
   return (
-    <div className="-m-3">
+    <div className="w-full h-full">
       <SignedIn>
         <UserButton />
       </SignedIn>

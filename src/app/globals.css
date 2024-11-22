@@ -34,7 +34,6 @@
   position: relative;
   z-index: 1;
   transition: color 0.7s;
-  border-radius: 7px;
 }
 
 .banner-btn button span {

@@ -29,7 +29,7 @@ const Modal = ({
           <div>
             <h3 className="text-2xl font-semibold">
               About
-              <span className="font-extrabold text-primary text-3xl">
+              <span className="font-extrabold text-[#F8462E] text-3xl">
                 {" "}
                 CAR{" "}
               </span>
