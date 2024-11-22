@@ -2,20 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.banner-btn {
+  margin: auto -10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.header {
+  backdrop-filter: blur(10px);
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.dropdownprofile {
+  position: absolute;
+  top: 3rem;
+  left: -3rem;
+  border: 1px solid rgb(209, 209, 209);
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: small;
+  font-weight: 400;
+}
+
+.banner-btn button {
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 9px 10px;
+  color: #ffff;
+  background: orangered;
+  border: 1px solid #fff;
+  position: relative;
+  z-index: 1;
+  transition: color 0.7s;
+  border-radius: 7px;
+}
+
+.banner-btn button span {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: -1;
+  transition: 0.7s;
+}
+
+.banner-btn button:hover span {
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid #f8462e;
+  background-color: #fedbb2;
+}
+
+.banner-btn button:hover {
+  color: #000;
+}
+
+.banner-btn h1:hover {
+  color: #3d82b9;
+}
+
+/* Chrome, Edge and Safari */
+
+*::-webkit-scrollbar {
+  width: 12px;
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 1px;
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #c5c4c4;
+  border: 1.5px solid #fff;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a0;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #a0a0a0;
 }
