@@ -4,32 +4,14 @@ import { useState } from "react";
 import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
-// import { SelectLocation } from './schema';
 
-import { Button } from "../ui/button";
-// import {
-//   Command,
-//   CommandEmpty,
-//   CommandGroup,
-//   CommandInput,
-//   CommandItem,
-//   CommandList,
-// } from '../ui/command';
-// import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover';
-// import { Separator } from '../ui/separator';
-// import { CheckIcon } from '../ui/check';
 import { SearchIcon } from "../ui/search";
 import { SelectorIcon } from "../ui/selector";
-
-// import { cn } from '../ui/utils';
 import Link from "next/link";
 
 export function SearchPanel() {
   const [startDate, setStartDate] = useState<Date | null>(new Date());
   const [endDate, setEndDate] = useState<Date | null>(new Date());
-
-  const [open, setOpen] = useState(false);
-  const [location, setLocation] = useState("");
 
   return (
     <div className="w-full">

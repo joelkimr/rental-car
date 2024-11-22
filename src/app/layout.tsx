@@ -24,6 +24,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="shortcut icon"
+          href="https://ik.imagekit.io/joel/hilux.jpg?updatedAt=1697712037718"
+          type="image/x-icon"
+        />
+      </head>
       <body
         className={`${montserrat.variable} font-mont w-full h-full lg:min-w-full md:min-w-[150%] min-w-[300%] mx-auto overflow-x-hidden`}
       >

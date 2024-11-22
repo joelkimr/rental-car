@@ -1,7 +1,7 @@
-import { SearchPanel } from './search-panel';
+import { SearchPanel } from "./search-panel";
 
 export function SearchPanelWrapper(props: any) {
-  const locations: any[] = [{ slug: 'Kampala', id: 1 }];
+  const locations: any[] = [{ slug: "Kampala", id: 1 }];
 
   if (!locations) return null;
 
